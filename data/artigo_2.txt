@@ -1,0 +1,233 @@
+News & Events
+
+Multimedia
+
+Suggested Searches
+
+Highlights
+
+NASA Simulations Improve Artemis II Launch Environment
+
+To Protect Artemis II Astronauts, NASA Experts Keep Eyes on Sun
+
+NASA’s Artemis II Moon Mission Daily Agenda
+
+Missions
+
+Humans in Space
+
+Earth
+
+The Solar System
+
+The Universe
+
+Science
+
+Aeronautics
+
+Technology
+
+Learning Resources
+
+About NASA
+
+NASA en Español
+
+News & Events
+
+Multimedia
+
+Highlights
+
+How Open NASA Data on Comet 3I/ATLAS Will Power Tomorrow’s Discoveries
+
+NASA’s Roman Observatory Passes Final Major Prelaunch Tests
+
+NASA’s Hubble Unexpectedly Catches Comet Breaking Up
+
+Highlights
+
+The Science Behind ‘Project Hail Mary’
+
+Meet the Platypi: NASA’s Newest Astronaut Candidate Class
+
+Ice to Fuel: NASA Tests Technology for Refueling Landers
+
+Highlights
+
+The Science Behind ‘Project Hail Mary’
+
+Restless Kīlauea Launches Lava and Ash
+
+NASA Laser Reflecting Instrument Makes GPS Satellite More Accurate
+
+Highlights
+
+How Open NASA Data on Comet 3I/ATLAS Will Power Tomorrow’s Discoveries
+
+The Science Behind ‘Project Hail Mary’
+
+NASA’s Hubble Unexpectedly Catches Comet Breaking Up
+
+Highlights
+
+The Science Behind ‘Project Hail Mary’
+
+NASA’s Roman Observatory Passes Final Major Prelaunch Tests
+
+NASA Discovers Crash of Extreme Stars in Unexpected Site
+
+Highlights
+
+How Open NASA Data on Comet 3I/ATLAS Will Power Tomorrow’s Discoveries
+
+The Science Behind ‘Project Hail Mary’
+
+NASA’s Hubble Unexpectedly Catches Comet Breaking Up
+
+Highlights
+
+NASA’s X-59 Experimental Supersonic Aircraft Makes Second Flight
+
+NASA Simulations Improve Artemis II Launch Environment
+
+NASA’s X-59 Prepares for Second Flight
+
+Highlights
+
+The Science Behind ‘Project Hail Mary’
+
+Wave of Dust Rolls Through Texas
+
+Artifacts From NASA’s Webb, Parker Solar Probe on View at Smithsonian
+
+Highlights
+
+Join the Artemis Mission to the Moon
+
+Highlights
+
+NASA Laser Reflecting Instrument Makes GPS Satellite More Accurate
+
+NASA Exploration, Science Inspire “Project Hail Mary” Film
+
+Meet the Platypi: NASA’s Newest Astronaut Candidate Class
+
+Highlights
+
+Agenda diaria de la misión a la Luna de Artemis II de la NASA
+
+La NASA refuerza Artemis: añade una misión y perfecciona su arquitectura general
+
+Últimos preparativos para la primera misión tripulada a la Luna con la campaña Artemis de la NASA
+
+NASA Webb Looks at Earth-Sized, Habitable-Zone Exoplanet TRAPPIST-1 e
+
+NASA Webb Mission Team
+
+Goddard Space Flight Center
+
+Contents
+
+Scientists are in the midst of observing theexoplanetTRAPPIST-1 e with NASA’s James Webb Space Telescope. Careful analysis of the results so far presents several potential scenarios for what the planet’s atmosphere and surface may be like, as NASA science missions lay key groundwork to answer the question, “are we alone in the universe?”
+
+“Webb’s infrared instruments are giving us more detail than we’ve ever had access to before, and the initial four observations we’ve been able to make of planet e are showing us what we will have to work with when the rest of the information comes in,” said Néstor Espinoza of the Space Telescope Science Institute in Baltimore, Maryland, a principal investigator on the research team. Twoscientificpapersdetailing the team’s initial results are published in the Astrophysical Journal Letters.
+
+Image: Trappist-1 e (Artist's Concept)
+
+Of the seven Earth-sized worlds orbiting the red dwarf star TRAPPIST-1, planet e is of particular interest because it orbits the star at a distance where water on the surface is theoretically possible — not too hot, not too cold — but only if the planet has an atmosphere. That’s where Webb comes in. Researchers aimed the telescope’s powerful NIRSpec (Near-Infrared Spectrograph) instrument at the system as planet e transited, or passed in front of, its star. Starlight passing through the planet’s atmosphere, if there is one, will be partially absorbed, and the corresponding dips in the light spectrum that reaches Webb will tell astronomers what chemicals are found there. With each additional transit, the atmospheric contents become clearer as more data is collected.
+
+Primary atmosphere unlikely
+
+Though multiple possibilities remain open for planet e because only four transits have been analyzed so far, the researchers feel confident that the planet does not still have its primary, or original, atmosphere. TRAPPIST-1 is a very active star, with frequent flares, so it is not surprising to researchers that any hydrogen-helium atmosphere with which the planet may have formed would have been stripped off by stellar radiation. However many planets, including Earth, build up a heavier secondary atmosphere after losing their primary atmosphere. It is possible that planet e was never able to do this and does not have a secondary atmosphere. Yet researchers say there is an equal chance there is an atmosphere, and the team developed novel approaches to working with Webb’s data to determine planet e’s potential atmospheres and surface environments.
+
+World of (fewer) possibilities
+
+The researchers say it is unlikely that the atmosphere of TRAPPIST-1 e is dominated by carbon dioxide, analogous to the thick atmosphere of Venus and the thin atmosphere of Mars. However, the researchers also are careful to note that there are no direct parallels with our solar system.
+
+"TRAPPIST-1 is a very different star from our Sun, and so the planetary system around it is also very different, which challenges both our observational and theoretical assumptions,” said team member Nikole Lewis, an associate professor of astronomy at Cornell University.
+
+If there is liquid water on TRAPPIST-1 e, the researchers say it would be accompanied by agreenhouse effect, in which various gases, particularly carbon dioxide, keep the atmosphere stable and the planet warm.
+
+“A little greenhouse effect goes a long way,” said Lewis, and the measurements do not rule out adequate carbon dioxide to sustain some water on the surface. According to the team’s analysis, the water could take the form of a global ocean, or cover a smaller area of the planet where the star is at perpetual noon, surrounded by ice. This would be possible because, due to the TRAPPIST-1 planets’ sizes and close orbits to their star, it is thought that they all are tidally locked, with one side always facing the star and one side always in darkness.
+
+Image: TRAPPIST-1 e Transmission Spectrum (NIRSpec)
+
+Innovative new method
+
+Espinoza and co-principal investigator Natalie Allen of Johns Hopkins University are leading a team that is currently making 15 additional observations of planet e, with an innovative twist. The scientists are timing the observations so that Webb catches both planets b and e transiting the star one right after the other. After previous Webb observations of planet b, the planet orbiting closest to TRAPPIST-1, scientists are fairly confident it is a bare rock without an atmosphere. This means that signals detected during planet b’s transit can be attributed to the star only, and because planet e transits at nearly the same time, there will be less complication from the star’s variability. Scientists plan to compare the data from both planets, and any indications of chemicals that show up only in planet e’s spectrum can be attributed to its atmosphere.
+
+“We are really still in the early stages of learning what kind of amazing science we can do with Webb. It’s incredible to measure the details of starlight around Earth-sized planets 40 light-years away and learn what it might be like there, if life could be possible there,” said Ana Glidden, a post-doctoral researcher at Massachusetts Institute of Technology’s Kavli Institute for Astrophysics and Space Research, who led the research on possible atmospheres for planet e. “We’re in a new age of exploration that’s very exciting to be a part of,” she said.
+
+The four transits of TRAPPIST-1 e analyzed in the new papers published today were collected by the JWST Telescope Scientist Team’s DREAMS (Deep Reconnaissance of Exoplanet Atmospheres using Multi-instrument Spectroscopy) collaboration.
+
+The James Webb Space Telescope is the world’s premier space science observatory. Webb is solving mysteries in our solar system, looking beyond to distant worlds around other stars, and probing the mysterious structures and origins of our universe and our place in it. Webb is an international program led by NASA with its partners, ESA (European Space Agency) and CSA (Canadian Space Agency).
+
+To learn more about Webb, visit:
+
+https://science.nasa.gov/webb
+
+Downloads & Related Information
+
+The following sections contain links to download this article's images and videos in all available resolutions followed by related information links, media contacts, and if available, research paper and Spanish translation links.
+
+Related Images & Videos
+
+Trappist-1 e (Artist's Concept)
+
+This artist's concept shows the volatile red dwarf star TRAPPIST-1 and its four most closely orbiting planets, all of which have been observed by NASA’s James Webb Space Telescope. Webb has found no definitive signs of an atmosphere around any of these worlds yet.
+
+TRAPPIST-1 e Transmission Spectrum (NIRSpec)
+
+This graphic compares data collected by Webb’s NIRSpec (Near-Infrared Spectrograph) with computer models of exoplanet TRAPPIST-1 e with (blue) and without (orange) an atmosphere. Narrow colored bands show the most likely locations of data points for each model.
+
+Related Links
+
+Webb Blog:Reconnaissance of Potentially Habitable Worlds with NASA’s Webb
+
+Video:How to Study Exoplanets
+
+Video:How do we learn about a planet's Atmosphere?
+
+View moreaboutExoplanets
+
+More Webb News
+
+More Webb Images
+
+Webb Science Themes
+
+Webb Mission Page
+
+Share
+
+Details
+
+Laura BetzNASA’s Goddard Space Flight CenterGreenbelt, Marylandlaura.e.betz@nasa.gov
+
+Leah RamsaySpace Telescope Science InstituteBaltimore, Maryland
+
+Hannah BraunSpace Telescope Science InstituteBaltimore, Maryland
+
+Related Terms
+
+Related Links and Documents
+
+Related Topics
+
+James Webb Space Telescope
+
+Webb is the premier observatory of the next decade, serving thousands of astronomers worldwide. It studies every phase in the…
+
+Exoplanets
+
+Exoplanet Stories
+
+Universe
+
+National Aeronautics and Space Administration
+
+NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery.
+
+Follow NASA

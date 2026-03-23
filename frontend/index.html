@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head><meta charset="UTF-8"><title>Busca Exoplanetas</title></head>
+<body>
+  <h1>🔎 Busca Semântica NASA</h1>
+  <input id="query" placeholder="Digite sua pergunta sobre exoplanetas..." style="width:500px;padding:10px">
+  <button onclick="buscar()">Buscar</button>
+  <div id="resultado"></div>
+
+  <script>
+    async function buscar() {
+      const res = await fetch('http://127.0.0.1:8000/search', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({pergunta: document.getElementById('query').value})
+      });
+      const data = await res.json();
+      document.getElementById('resultado').innerHTML = data.resultados.map(r => 
+        `<p><strong>Dist: ${r.distancia.toFixed(4)}</strong><br>${r.trecho}</p>`
+      ).join('<hr>');
+    }
+  </script>
+</body>
+</html>

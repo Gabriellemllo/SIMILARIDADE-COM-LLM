@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+requests
+beautifulsoup4
+lxml
+sentence-transformers
+faiss-cpu
+numpy
+python-multipart
+pydantic
+jinja2
+pdfplumber
+scikit-learn

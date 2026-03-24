@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Exoplanetas</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Busca por Similaridade - Exoplanetas</h1>
+            <p>Digite sua pergunta sobre exoplanetas:</p>
+        </div>
+
+        <div class="search-container">
+            <input 
+                type="text" 
+                id="query" 
+                placeholder="Digite sua pergunta aqui"
+                autocomplete="off">
+            <button onclick="buscar()">Buscar</button>
+        </div>
+
+        <div class="legenda">
+            <span class="cor bom"></span> Alta similaridade
+            <span class="cor medio"></span> Média similaridade
+            <span class="cor ruim"></span> Baixa similaridade
+        </div>
+
+        <div id="resultado" class="resultado"></div>
+    </div>
+
+    <script>
+        async function buscar() {
+            const query = document.getElementById('query').value.trim();
+            const resultadoDiv = document.getElementById('resultado');
+
+            if (!query) {
+                resultadoDiv.innerHTML = `<p class="erro">Digite uma pergunta!</p>`;
+                return;
+            }
+
+            resultadoDiv.innerHTML = `<p class="loading">Buscando resultados...</p>`;
+
+            try {
+                const res = await fetch('/search', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ pergunta: query })
+                });
+
+                const data = await res.json();
+
+                let html = `<h2>Resultados encontrados (${data.resultados.length}):</h2>`;
+
+                data.resultados.forEach(r => {
+                    const similaridade = ((1 - r.distancia) * 100).toFixed(0);
+                    const classe = r.distancia < 0.5 ? 'bom' : (r.distancia < 0.7 ? 'medio' : 'ruim');
+
+                    html += `
+                        <div class="item ${classe}">
+                            <div class="distancia">
+                                Distância: <strong>${r.distancia.toFixed(4)}</strong> 
+                                <span class="porcentagem">(${similaridade}% similar)</span>
+                            </div>
+                            <p>${r.trecho}</p>
+                        </div>
+                    `;
+                });
+
+                resultadoDiv.innerHTML = html;
+
+            } catch (e) {
+                resultadoDiv.innerHTML = `<p class="erro">Erro ao conectar com a API.<br>Verifique se o servidor está rodando.</p>`;
+            }
+        }
+
+        document.getElementById('query').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') buscar();
+        });
+    </script>
+</body>
+</html>

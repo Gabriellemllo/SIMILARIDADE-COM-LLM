@@ -58,7 +58,7 @@ def inicializar_dados():
         print("Dados já existem. Iniciando diretamente.")
 
 
-inicializar_dados()
+# inicializar_dados()
 
 
 print("Carregando modelo e índice...")

@@ -9,3 +9,5 @@ numpy
 python-multipart
 pydantic
 jinja2
+pdfplumber
+scikit-learn

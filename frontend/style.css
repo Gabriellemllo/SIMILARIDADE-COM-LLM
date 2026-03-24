@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: #e2e8f0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #60a5fa;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.15rem;
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+.legenda {
+    text-align: center;
+    margin: 20px 0 35px 0;
+    font-size: 0.95rem;
+    color: #94a3b8;
+}
+
+.legenda span {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    margin: 0 8px;
+    vertical-align: middle;
+}
+
+.legenda .bom  { background: #22c55e; }
+.legenda .medio { background: #eab308; }
+.legenda .ruim  { background: #ef4444; }
+
+.search-container {
+    display: flex;
+    gap: 15px;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+input {
+    flex: 1;
+    padding: 16px 20px;
+    font-size: 1.1rem;
+    border: 2px solid #3b82f6;
+    border-radius: 12px;
+    background: white;
+    color: #1e2937;
+    outline: none;
+}
+
+input:focus {
+    border-color: #1e40af;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.3);
+}
+
+button {
+    padding: 16px 32px;
+    font-size: 1.1rem;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+.resultado {
+    background: white;
+    color: #1e2937;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #1e40af;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+}
+
+.item {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border-left: 6px solid #64748b;
+    background: #f8fafc;
+}
+
+.item.bom  { 
+    border-left-color: #22c55e; 
+    background: #f0fdf4; 
+}
+
+.item.medio { 
+    border-left-color: #eab308; 
+    background: #fffdf0; 
+}
+
+.item.ruim  { 
+    border-left-color: #ef4444; 
+    background: #fff5f5; 
+}
+
+.distancia {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #334155;
+}
+
+.porcentagem {
+    font-size: 0.95rem;
+    color: #64748b;
+    margin-left: 8px;
+}
+
+.loading, .erro {
+    text-align: center;
+    padding: 40px;
+    font-size: 1.1rem;
+}
+
+.erro { 
+    color: #ef4444; 
+}
+
+@media (max-width: 768px) {
+    .search-container {
+        flex-direction: column;
+    }
+    input, button {
+        width: 100%;
+    }
+}

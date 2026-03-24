@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 import subprocess
@@ -106,3 +106,9 @@ async def buscar(q: Query):
 @app.get("/health")
 async def verificar_saude():
     return {"status": "ok", "chunks_carregados": len(chunks)}
+
+
+@app.get("/favicon.ico")
+async def favicon():
+    """Retorna um favicon simples para evitar erros 404"""
+    return {"status": "ok"}

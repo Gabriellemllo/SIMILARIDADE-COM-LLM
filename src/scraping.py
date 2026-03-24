@@ -2,49 +2,73 @@ import requests
 from bs4 import BeautifulSoup
 import os
 import re
+import time
 
 urls = [
-    "https://science.nasa.gov/universe/exoplanets/discovery-alert-an-ice-cold-earth/",
-    "https://science.nasa.gov/universe/exoplanets/nasa-webb-looks-at-earth-sized-habitable-zone-exoplanet-trappist-1-e/",
-    "https://www.nasa.gov/universe/exoplanets/nasas-tally-of-planets-outside-our-solar-system-reaches-6000/"
+    "https://periodicos.ufes.br/astronomia/article/view/43184",
+    "https://periodicos.ufes.br/astronomia/article/view/38610",
+    "https://teses.usp.br/teses/disponiveis/14/14131/tde-21062013-162408/pt-br.php",
+    "http://repositorio.unb.br/handle/10482/30855"
 ]
 
 headers = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                  "AppleWebKit/537.36 (KHTML, like Gecko) "
+                  "Chrome/129.0.0.0 Safari/537.36"
 }
 
 os.makedirs("../data", exist_ok=True)
 
 for i, url in enumerate(urls, start=1):
+    print(f"[{i}/{len(urls)}] Tentando baixar: {url}")
+    
     try:
-        response = requests.get(url, headers=headers, timeout=15)
-        response.raise_for_status() 
+        response = requests.get(url, headers=headers, timeout=30)
+        print(f"  Status: {response.status_code}")
+
+        if response.status_code != 200:
+            print(f"  Falhou com status {response.status_code}")
+            continue
 
         soup = BeautifulSoup(response.text, "html.parser")
 
-        article_body = soup.find("div", class_=["article-body", "wysiwyg", "text"])
-        if article_body:
-            paragraphs = article_body.find_all(["p", "h1", "h2", "h3", "li"])
+        for tag in soup(["script", "style", "nav", "header", "footer", "aside", "form", "button"]):
+            tag.decompose()
+
+        main_content = soup.find(
+            "div",
+            class_=lambda x: x and any(
+                word in x.lower() 
+                for word in ["article", "content", "text", "abstract", "fulltext", "main", "body"]
+            )
+        )
+
+        if main_content:
+            full_text = main_content.get_text(separator="\n", strip=True)
         else:
-            paragraphs = soup.find_all(["p", "h1", "h2", "h3"])
+            full_text = soup.get_text(separator="\n", strip=True)
 
-        text_parts = []
-        for elem in paragraphs:
-            txt = elem.get_text(strip=True)
-            if txt:
-                text_parts.append(txt)
+        full_text = re.sub(r'\s+', ' ', full_text).strip()
 
-        full_text = "\n\n".join(text_parts)
-        
-        full_text = re.sub(r'\n{3,}', '\n\n', full_text).strip()
+        if len(full_text) < 300:
+            print(f"  Texto curto ({len(full_text)} caracteres)")
+            filename = f"../data/artigo_{i:02d}_RESUMO.txt"
+        else:
+            filename = f"../data/artigo_{i:02d}.txt"
 
-        filename = f"../data/artigo_{i}.txt"
         with open(filename, "w", encoding="utf-8") as f:
             f.write(full_text)
+        
+        print(f"  Salvo! ({len(full_text)} caracteres) -> {filename}")
 
-        print(f"Artigo {i} salvo com sucesso! ({len(full_text)} caracteres) → {filename}")
-
-    except requests.exceptions.RequestException as e:
-        print(f"Erro ao baixar {url}: {e}")
+    except requests.exceptions.Timeout:
+        print("  Timeout - site demorou demais")
+    except requests.exceptions.ConnectionError:
+        print("  Erro de conexao")
     except Exception as e:
-        print(f"Erro inesperado no artigo {i}: {e}")
+        print(f"  Erro inesperado: {e}")
+
+    time.sleep(2)
+
+print("\nScraping finalizado!")
+print("Verifique a pasta ../data")

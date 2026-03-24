@@ -62,7 +62,7 @@ def inicializar_dados():
 
 
 print("Carregando modelo e índice...")
-model = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
+model = SentenceTransformer("all-MiniLM-L6-v2")
 
 with open(BASE_DIR / "embeddings/chunks.json", "r", encoding="utf-8") as f:
     chunks = json.load(f)
